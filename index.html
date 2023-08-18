@@ -7,15 +7,10 @@
     <title>Elevate Co. - Personnel | CEO </title>
     <style>
         body {
+            color: #5C5470; 
+            background-color: #FAF0E6;
             padding: 0px;
             margin: 0px;
-        }
-
-        #contentarea {
-            padding: 5px;
-        }
-        a{
-            color:#FAF0E6;
         }
 
         div#navmenu {
@@ -45,6 +40,23 @@
             color: #B9B4C7;
         }
 
+        #contentarea p, #contentarea h3, #contentarea a, #contentarea table{
+            padding: 5px;
+        }
+
+        a{
+            color:#FAF0E6;
+        }
+
+        div#contentarea .educationlist, div#contentarea .workarea {
+            color: #FAF0E6;
+            background-color: rgba(92, 84, 112, 0.6);;
+        }
+
+        div#contentarea .educationlist ul li, div#contentarea .workarea th {
+            color: #352F44;
+        }
+
         div#contact-section {
             color: #FAF0E6;
             background-color: #352F44;
@@ -53,12 +65,16 @@
 
         }
 
+        div#contentarea h3 {
+            color: #352F44;
+        }
+
         div#contact-section h3 {
             color: #B9B4C7;
         }
     </style>
 </head>
-<body style="color: #5C5470; background-color: #FAF0E6;">
+<body>
     <div id="navmenu">
     <span id="top-page"></span>
     <table cellspacing="10">
@@ -93,36 +109,38 @@
     <p>
         After that I've dedicated myself to the study of Web, Software and Game Development with the intent to find a well paying online job. This sooner allowed me to start my own projects when finally <strong>Elevate Co.</strong> came to existance.
     </p>
-    <ul>
-        <li><strong>Primary School | EMEF Maria Regiana da Silva (1st to 8th grade)</strong></li>
+    <div class="educationlist">
+        <ul>
+            <li><strong>Primary School | EMEF Maria Regiana da Silva (1st to 8th grade)</strong></li>
+            <p>
+                <em>R. Rafael Santos, 530 - Lagoinha, Horizonte - CE, 62880-000</em>
+            </p>
+            <li><strong>Primary School | EMEF Raimunda Duarte Teixeira (9th grade)</strong></li>
+            <p>
+                <em>Av. Francisco Eudes Ximenes, 83 - Centro. Horizonte - CE, 62880-078.</em>
+            </p>
+            <li><strong>Secondary School | EEEP Maria Dolore Alcântara e Silva (1st to 3rd grade)</strong></li>
+            <p>
+                <em>Av. Juvenal de Castro, 609 - Centro, Horizonte - CE, 62880-000</em>
+            </p>
+            <li><strong>College | UECE - Universida Estadual do Ceará (1st to 3rd semester)</strong></li>
+            <p>
+                <em>Av. Dr. Silas Munguba, 1700 - Itaperi, Fortaleza - CE, 60714-903</em> - 
+                <a href="https://www.uece.br/" target="_blank">Website</a>
+            </p>
+            <li><strong>College | UNIPR - Università degli Studi di Parma (1st to 4th year)</strong></li>
+            <p>
+                <em>Str. del Taglio, 10, Parma PR, 43126 (Italia)</em> - 
+                <a href="https://smv.unipr.it/en" target="_blank">Website</a>
+            </p>
+        </ul>
         <p>
-            <em>R. Rafael Santos, 530 - Lagoinha, Horizonte - CE, 62880-000</em>
+            <a href="#top-page">Back to top.</a>
         </p>
-        <li><strong>Primary School | EMEF Raimunda Duarte Teixeira (9th grade)</strong></li>
-        <p>
-            <em>Av. Francisco Eudes Ximenes, 83 - Centro. Horizonte - CE, 62880-078.</em>
-        </p>
-        <li><strong>Secondary School | EEEP Maria Dolore Alcântara e Silva (1st to 3rd grade)</strong></li>
-        <p>
-            <em>Av. Juvenal de Castro, 609 - Centro, Horizonte - CE, 62880-000</em>
-        </p>
-        <li><strong>College | UECE - Universida Estadual do Ceará (1st to 3rd semester)</strong></li>
-        <p>
-            <em>Av. Dr. Silas Munguba, 1700 - Itaperi, Fortaleza - CE, 60714-903</em> - 
-            <a href="https://www.uece.br/" target="_blank">Website</a>
-        </p>
-        <li><strong>College | UNIPR - Università degli Studi di Parma (1st to 4th year)</strong></li>
-        <p>
-            <em>Str. del Taglio, 10, Parma PR, 43126 (Italia)</em> - 
-            <a href="https://smv.unipr.it/en" target="_blank">Website</a>
-        </p>
-    </ul>
-    <p>
-        <a href="#top-page">Back to top.</a>
-    </p>
+        <hr size="2" noshade="noshade">
+    </div>   
 
     <!-- HOBBIES SECTION-->
-    <hr size="2" noshade="noshade">
     <h3 id="hobbies-section">Hobbies</h3>
     <ol>
         <li>Watching Asian Dramas</li>
@@ -132,6 +150,7 @@
     </ol>
     <a href="#top-page">Back to top.</a>
 
+    <div class="workarea">
     <!-- WORK SECTION-->
     <hr size="2" noshade="noshade">
     <h3 id="work-section">Work</h3>
@@ -158,9 +177,10 @@
         </tbody>
     </table>
     <a href="#top-page">Back to top.</a>
+    <hr size="2" noshade="noshade">
+    </div>
 
     <!-- SKILLS SECTION -->
-    <hr size="2" noshade="noshade">
     <h3 id="skills-section">Skills</h3>
     <table cellspacing="10">
             <tbody>
