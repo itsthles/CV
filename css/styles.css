@@ -57,7 +57,7 @@ div#contentarea .educationlist ul li, div#contentarea .workarea th {
 }
 
 div#contact-section {
-    min-height: 222px;
+    max-height: 300px;
     color: #FAF0E6;
     background-color: #352F44;
     padding: 0px 5px 5px 15px;
