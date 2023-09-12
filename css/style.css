@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #F86F03;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* HEADER SECTION */
+header {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4em; 
+    font-weight: bold;
+    color: #F86F03;
+}
+
+header:hover {background-color: rgba(248, 111, 3, 0.1);}
+
+.header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1 1 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+
+nav {
+    flex: 1 1 80%;
+    width: 100%;
+}
+
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: auto 4.4em;
+}
+
+#menu-icon {
+    display: none;
+}
+
+/* HERO AREA */
+main {
+
+}
+
+.main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pic-me {
+    margin: auto;
+}
+.pic-me img {
+    width: 25em;
+    margin-top: 12.5em;
+    border-radius: 50%;
+    outline: 0.35em solid white;
+    outline-offset: 0.4em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1460px) {
+    .logo, nav {
+        flex: 1 1 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul {
+        padding-left: 0;
+        list-style-type: none;
+        text-align: center;    
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto 4.4em;
+    }
+    
+}
+
+@media (max-width: 1168px) {
+    nav {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-icon {
+        display: inline-block;
+        position: absolute;
+        top: center;
+        right: 3.0em;
+        cursor: pointer;
+    }
+}
