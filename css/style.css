@@ -6,10 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D9D4CA;
-}
-
-nav, header {
-    min-width: 459px;
+    min-width: 100vw;
 }
 
 nav, h1 {
