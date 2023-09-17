@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
+    max-width: 100vw;;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #D9D4CA;
-    min-width: 100vw;
+    max-width: 100vw;
 }
 
 nav, h1 {
@@ -15,8 +16,11 @@ nav, h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h2 {
+h2, h3, h4 {
+    font-size: 2rem;
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 img {
     width: 100%;
@@ -49,7 +53,7 @@ nav {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100vw;
+    min-width: 100vw;
     padding: 0 6.25em;
     background-color: #000000;
     color: #ffffff;
@@ -82,13 +86,16 @@ ul li {
 
 header {
     height: 100vh;
+    min-height: 100vh;
 }
 
 .hero-area {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 3.75em;
     padding: 10em 6.25em 0;
+    min-height: 100vh;
 }
 
 .hero-area img {
@@ -107,24 +114,110 @@ header {
     width: 80%;
 }
 
-
-
-.heroarea-background {
-    max-width: 100vw;
-    /* min-height: ; */
-    max-height: 80vh;
-    border-radius: 0 0 42% 42%;
-    background-color: #EDB120;
+.main {
+    margin: 3.75em 0;
 }
 
-.footer-background {
-    width: 300px;
-    height: 250px;
-    border-radius: 42% 42% 0 0;
-    background-color: #717171;
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.75em auto;
+    width: 80%;
 }
+
+.italy, 
+.brazil,
+.web-development,
+.android-app-development,
+.more-pizza {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: -1;
+    margin-top: 2em;
+}
+
+.brazil,
+.android-app-development {
+    flex-wrap: wrap-reverse;
+} 
+
+.about-me-picture {
+    flex: 1 1 20%;
+    text-align: center;
+
+}
+
+img.aside-pic {
+    height: 19.37em;
+    width: 19.37em;
+}
+
+.about-me-text {
+    flex: 1 1 70%;
+}
+
+.about-me-text p {
+    margin: 0 auto;
+    padding: 2.5em;
+    width: 50%;
+}
+
+img.text-pic {
+    display: block;
+    height: 8.62em;
+    width: 8.62em;
+    float: right;
+}
+
+div:nth-child(odd) > img.text-pic {
+    float: left;
+}
+
+.path {
+    flex: 0 0 100%;
+    overflow: hidden;
+    min-height: 2.5em;
+    /* min-width: 100%; */
+}
+
+.right {
+    position: absolute;
+    bottom: -50%;
+    right: -6.875em;
+    z-index: -1;
+    min-height: 26.875em;
+    width: 6.25em;
+    border-width: 10px 10px 10px 0;
+    border-top-right-radius: 9.687em;
+    border-bottom-right-radius: 9.687em;
+    border-color:  #5D5E60;
+    border-style: dashed;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: -6.875em;
+    z-index: -1;
+    min-height: 26.875em;
+    width: 6.25em;
+    border-width: 10px 0px 10px 10px;
+    border-top-left-radius: 9.687em;
+    border-bottom-left-radius: 9.687em;
+    border-color:  #5D5E60;
+    border-style: dashed;
+}
+
+
 
 /* MEDIA QUERIES */
+
 @media (max-width: 947px) {
     .self-introduction {
         width: 100%;
@@ -159,7 +252,7 @@ header {
         flex-basis: 1 1 100%;
         width: 100%;
     }
-
+    
     .self-introduction {
         text-align: center;
         padding: 0;
@@ -185,12 +278,26 @@ header {
         width: 100%;
         text-align: center;
     }
-
+    
     #btn-menu {
         display: block;
     }
 
-    .showMenu {
-        display: block;
-    }
+}
+
+/* CSS Testing rules */
+
+.heroarea-background {
+    max-width: 100vw;
+    max-height: 80vh;
+    margin-bottom: 2.5em;
+    border-radius: 0 0 42% 42%;
+    background-color: #EDB120;
+}
+
+.footer-background {
+    width: 300px;
+    height: 250px;
+    border-radius: 42% 42% 0 0;
+    background-color: #717171;
 }
